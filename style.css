@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+}
+
+.text-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.h2 {
+    font-family: 'Monaco';
+}
+
+.full-size-image {
+    padding: 6em 0;
+    background-size: 50%;
+}
+
+.full-size-image h1 {
+    color: rgb(255, 139, 139);
+    text-shadow: 0 0 40px black;
+    font-size: 3em;
+}
+
+#rest-grades {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+img {
+    max-width: 100%
+}
+
+@media only screen and (min-width: 700px) {
+    #scrolly.side-by-side {
+        display: flex;
+    }
+
+    #scrolly.side-by-side > div {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0.75em;
+    }
+
+    #scrolly.side-by-side .scrolly-overlay {
+        margin-top: 70vh;
+        order: 0;
+        /* Change these to adjust sizing options for the text */
+        min-width: 15rem;
+        max-width: 20rem;
+    }
+
+    #scrolly.side-by-side .sticky-thing {
+        /* Change order to 0 if you want the text on the right */
+        order: 1;
+        flex-grow: 2;
+    }
+}
